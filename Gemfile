@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-
-
 gem 'rails', '4.2.4'
 gem 'pg'
 gem 'sass-rails', '~> 5.0'
@@ -15,6 +13,8 @@ gem 'rails_12factor', group: :production
 
 group :development, :test do
   gem 'byebug'
+  gem 'rspec-rails', '~> 3.0'
+  gem "factory_girl_rails", "~> 4.0"
 end
 
 group :development do
@@ -22,4 +22,5 @@ group :development do
   gem 'spring'
   gem 'better_errors'
   gem 'binding_of_caller'
+
 end
